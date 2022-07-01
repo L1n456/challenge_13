@@ -1,0 +1,143 @@
+.container{
+    display: flex;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+    margin: 5% 15%;
+    font-family: sans-serif;
+}
+
+.left{
+    width: 50%;
+    padding: 10%;
+    color: white;
+    font-size: 16px;
+}
+
+.left p{
+    font-size: 12px;
+}
+
+.right{
+    padding: 5% 0;
+    width: 50%;
+}
+
+button{
+   font-size: 12px;
+   background-color: hsl(248, 32%, 49%);
+   padding: 3% 15%;
+   border: transparent;
+   border-radius: 5px;
+   color: white;
+   font-weight: 500;
+   box-shadow: 0px 5px #0200041f;
+}
+
+button span{
+    font-weight: 200;
+    color: hsl(246, 25%, 77%);
+}
+
+form{
+    background-color: white;
+    margin: 5%  10% 5% 0;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0px 5px #0200041f;
+}
+
+.input{
+    width: 90%;
+    display: flex;
+    margin: 2% 5%;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    align-items: center;
+}
+
+.input img{
+    width: 10%;
+    height: 5%;
+    margin: 0 2%;
+    display: none;
+}
+
+.input:focus{
+    border: 2px solid hsl(248, 32%, 49%);
+}
+
+input[type=text],input[type=email],input[type=password]{
+    width: 80%;
+    margin: 2% 5%;
+    padding: 2% 5%;
+    border: transparent; 
+}
+
+::placeholder{
+    font-size: 11px ;
+}
+
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
+    border: transparent;
+    outline: none;
+}
+
+.err-msg{
+    color: hsl(0, 100%, 74%) ;
+    text-align: right;
+    margin-right: 0;
+    font-size: 10px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+input[type=submit]{
+    width: 92%;
+    padding: 3% 6%;
+    margin-top: 2%;
+    margin-left: 5%;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-size: 10px ;
+    font-weight: 600;
+    border: transparent;
+    border-radius: 5px;
+}
+
+form p{
+    margin: 2% 10% 2% 15%;
+    font-size: 7px;
+    color: hsl(246, 25%, 77%);
+}
+
+form span{
+    color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .left{
+        width: 80%;
+        text-align: center;
+        padding-right: 5%;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    button{
+       margin: 0 10%;
+    }
+
+    form{
+        margin-left: 10%;
+    }
+}
